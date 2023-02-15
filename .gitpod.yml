@@ -1,0 +1,22 @@
+# CodingCoffee  C/C++ GitPod Examples more courses : http://www.codingcoffee.org
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: echo 'this is c c++ hello gitpod example' && pip3 install -r requirements.txt && sudo apt-get -y install python3-scipy
+    command: echo 'build hello.c and hello.cpp' && cp -r /workspace/python_tutorial/.jupyter /home/gitpod/
+
+# CodingCoffee  C/C++ GitPod Examples more courses : http://www.codingcoffee.org
+ports:
+  - port: 8050
+    onOpen: open-preview
+  - port: 8888
+    onOpen: open-browser
+  - port: 3000
+    onOpen: open-preview
+  - port: 6080
+    onOpen: open-preview
+  - port: 5900
+    onOpen: ignore
+  - port: 35900
+    onOpen: ignore
